@@ -1,0 +1,90 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.search-bar {
+    margin-bottom: 30px;
+}
+
+.search-bar input {
+    width: 70%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.search-bar button {
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.loader {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.repositories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    width: calc(50% - 20px);
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card .card-body {
+    padding: 20px;
+}
+
+.card h5 {
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #555;
+}
+
+.pagination {
+    margin-top: 20px;
+    justify-content: center;
+    gap: 20px;
+}
+#currentPage{font-size: 2rem;}
+.slider-container {
+    margin-top: 20px;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 600px) {
+    .card {
+        width: 100%;
+    }
+}

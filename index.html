@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GitHub Repository Viewer</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search repositories...">
+            <button id="search-btn">Search</button>
+        </div>
+        <div class="loader" style="display: none;">
+            Loading...
+        </div>
+        <div class="repositories">
+
+        </div>
+        <div class="pagination">
+            <button onclick="prevPage()">Previous</button>
+            <span id="currentPage">1</span>
+            <button onclick="nextPage()">Next</button>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</html>
